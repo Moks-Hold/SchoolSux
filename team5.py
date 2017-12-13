@@ -9,10 +9,9 @@
 team_name = 'The name the team gives to itself' # Only 10 chars displayed.
 strategy_name = 'The name the team gives to this strategy'
 strategy_description = 'How does this strategy decide?'
-    
+
 def move(my_history, their_history, my_score, their_score):
-    ''' Arguments accepted: my_history, their_history are strings.
-    my_score, their_score are ints.
+    '''Make my move based on the history with this player.
     
     Make my move.
     Returns 'c' or 'b'. 
@@ -53,7 +52,7 @@ if __name__ == '__main__':
               my_score=0,
               their_score=0,
               result='b'):
-         print('Test passed')
+         print ('Test passed')
      # Test 2: Continue betraying if they collude despite being betrayed.
     test_move(my_history='bbb',
               their_history='ccc', 
